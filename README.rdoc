@@ -11,13 +11,22 @@ This article was a great help: http://stufftohelpyouout.blogspot.com/2012/09/ins
 
 in recent -> oldest order:
 
-08db6c7 fix asset precompiling/db connection issue
-c1e36c3 precompile application.css
-eb82802 setup rvmrc to make sure we stay in gemset that uses rails4
-76a3622 setup proper home to welcome
-f47ccdd ask for ruby 1.9.3
-1f0c38a pg for prod
-f590dea update deprecated finders git location
-cf05618 bind to rails/journey on github
-be69cf1 update gem lock
-700a3fb bind rails to github
+{08db6c7}[https://github.com/jackdempsey/rails4_on_heroku/commit/08db6c7290d8d704ad61a68c1b8a8ed1d1d7a9e7] fix asset precompiling/db connection issue
+
+{c1e36c3}[https://github.com/jackdempsey/rails4_on_heroku/commit/c1e36c369a60eb986a07a295cec04beabafb9172] precompile application.css
+
+{eb82802}[https://github.com/jackdempsey/rails4_on_heroku/commit/eb82802df55ceab5cb62051f39f8366d43b7ca84] setup rvmrc to make sure we stay in gemset that uses rails4
+
+{76a3622}[https://github.com/jackdempsey/rails4_on_heroku/commit/76a362291257c03c9186bd104f5776e454170b31] setup proper home to welcome
+
+{f47ccdd}[https://github.com/jackdempsey/rails4_on_heroku/commit/f47ccddb0525993be9ea1b97723e988eaf722efa] ask for ruby 1.9.3
+
+{1f0c38a}[https://github.com/jackdempsey/rails4_on_heroku/commit/1f0c38a4e75a8bb4a332cfbc9b8e261fda87fe78] pg for prod
+
+{f590dea}[https://github.com/jackdempsey/rails4_on_heroku/commit/f590deab760cb36e8a9559d563398f5c70e5e063] update deprecated finders git location
+
+{cf05618}[https://github.com/jackdempsey/rails4_on_heroku/commit/cf05618cc935ca755a29f905217c246960d09bb6] bind to rails/journey on github
+
+{be69cf1}[https://github.com/jackdempsey/rails4_on_heroku/commit/be69cf166d9b03807ee7dc46dbc7c6d38791c244] update gem lock
+
+{700a3fb}[https://github.com/jackdempsey/rails4_on_heroku/commit/700a3fbfb4d45d339eefba046ace8d3a977f6820] bind rails to github
