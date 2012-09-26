@@ -8,3 +8,16 @@ This article was a great help: http://stufftohelpyouout.blogspot.com/2012/09/ins
 
 
 === Getting a rails 4 app to work on herkou
+
+in recent -> oldest order:
+
+08db6c7 fix asset precompiling/db connection issue
+c1e36c3 precompile application.css
+eb82802 setup rvmrc to make sure we stay in gemset that uses rails4
+76a3622 setup proper home to welcome
+f47ccdd ask for ruby 1.9.3
+1f0c38a pg for prod
+f590dea update deprecated finders git location
+cf05618 bind to rails/journey on github
+be69cf1 update gem lock
+700a3fb bind rails to github
