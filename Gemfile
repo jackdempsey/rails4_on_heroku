@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', github: 'rails/rails'
-
+gem 'journey', github: 'rails/journey'
 # Bundle edge Rails instead:
 # gem 'rails', github: 'rails/rails'
 
