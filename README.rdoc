@@ -6,6 +6,70 @@ I'll be putting up some notes of what I did to get this working. None is hard, j
 
 This article was a great help: http://stufftohelpyouout.blogspot.com/2012/09/install-local-edge-rails-40-beta-and.html
 
+Here's a bit of an abbreviated list of steps:
+
+  cd ~/git/rails
+  git pull
+  rvm gemset create local_rails
+  echo "rvm use ruby-1.9.3-p125@local_rails" > .rvmrc
+  cd
+  cd -
+  rvm gemset list
+  #make sure you're in local_rails gemset
+  gem i bundler sdoc erubis
+  cd ..
+  git clone git://github.com/rails/journey.git
+  cd journey
+  rvm gemset use local_rails
+  gem build journey.gemspec
+  gem i journey-*.gem*
+  cd ..
+  git clone git://github.com/rails/activerecord-deprecated_finders.git
+  cd activerecord-deprecated_finders
+  rvm gemset list
+  rvm gemset use local_rails
+  gem build activerecord-deprecated_finders.gemspec
+  gem i activerecord-deprecated_finders-*.gem*
+  cd ../rails
+  rake install
+  gem build rails.gemspec
+  gem i rails-4.0.0.beta.gem
+  gem -v
+  gem update --system
+  gem i rails-4.0.0.beta.gem
+  rails -v
+
+
+
+
+  # here's how to generate and config the app to run on heroku
+  rails new rails4_test_app
+  cd rails4_test_app
+  git init
+  git status
+  git add .
+  git commit -m 'initial'
+  heroku create
+
+  # you can look in the git history of the app to see what each of these
+  # commits did
+
+  git commit -a -m 'bind rails to github'
+  git commit -m 'update gem lock'
+  git commit -m 'bind to rails/journey on github'
+  git commit -a -m 'update deprecated finders git location'
+  git commit -a -m 'pg for prod'
+  git commit -m 'ugh make sure gemfile lock is updated too ZOMFG'
+  git commit -a -m 'ask for ruby 1.9.3'
+  git commit -m'setup proper home to welcome'
+  git commit -m 'setup rvmrc to make sure we stay in gemset that uses rails4'
+  git commit -a -m 'precompile application.css'
+  git commit -m "fix asset precompiling/db connection issue"
+
+  # add to github
+  git remote add origin git@github.com:jackdempsey/rails4_on_heroku.git
+  g push -u origin master
+
 
 === Getting a rails 4 app to work on herkou
 
