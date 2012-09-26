@@ -4,7 +4,13 @@ gem 'rails', github: 'rails/rails'
 gem 'journey', github: 'rails/journey'
 gem 'activerecord-deprecated_finders', github: 'rails/activerecord-deprecated_finders'
 
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
