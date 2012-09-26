@@ -42,6 +42,8 @@ Here's a bit of an abbreviated list of steps:
 
 
 
+=== Getting a rails 4 app to work on herkou
+
   # here's how to generate and config the app to run on heroku
   rails new rails4_test_app
   cd rails4_test_app
@@ -54,24 +56,7 @@ Here's a bit of an abbreviated list of steps:
   # you can look in the git history of the app to see what each of these
   # commits did
 
-  git commit -a -m 'bind rails to github'
-  git commit -m 'update gem lock'
-  git commit -m 'bind to rails/journey on github'
-  git commit -a -m 'update deprecated finders git location'
-  git commit -a -m 'pg for prod'
-  git commit -m 'ugh make sure gemfile lock is updated too ZOMFG'
-  git commit -a -m 'ask for ruby 1.9.3'
-  git commit -m'setup proper home to welcome'
-  git commit -m 'setup rvmrc to make sure we stay in gemset that uses rails4'
-  git commit -a -m 'precompile application.css'
-  git commit -m "fix asset precompiling/db connection issue"
 
-  # add to github
-  git remote add origin git@github.com:jackdempsey/rails4_on_heroku.git
-  g push -u origin master
-
-
-=== Getting a rails 4 app to work on herkou
 
 in recent -> oldest order:
 
@@ -94,3 +79,8 @@ in recent -> oldest order:
 {be69cf1}[https://github.com/jackdempsey/rails4_on_heroku/commit/be69cf166d9b03807ee7dc46dbc7c6d38791c244] update gem lock
 
 {700a3fb}[https://github.com/jackdempsey/rails4_on_heroku/commit/700a3fbfb4d45d339eefba046ace8d3a977f6820] bind rails to github
+
+  # add to github
+  git remote add origin git@github.com:jackdempsey/rails4_on_heroku.git
+  g push -u origin master
+
