@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.0.beta'
+gem 'rails', github: 'rails/rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', github: 'rails/rails'
